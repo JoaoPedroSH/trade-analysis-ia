@@ -1,22 +1,20 @@
 <script setup>
-import BestSellingWidget from '@/components/dashboard/BestSellingWidget.vue';
-import NotificationsWidget from '@/components/dashboard/NotificationsWidget.vue';
-import RecentSalesWidget from '@/components/dashboard/RecentSalesWidget.vue';
-import RevenueStreamWidget from '@/components/dashboard/RevenueStreamWidget.vue';
-import StatsWidget from '@/components/dashboard/StatsWidget.vue';
+import PerformanceByModelWidget from '@/components/dashboard/PerformanceByModelWidget.vue';
+import SignalHistoryWidget from '@/components/dashboard/SignalHistoryWidget.vue';
+import IaModelsWidget from '@/components/dashboard/IaModelsWidget.vue';
+import EconomicCalendarWidget from '@/components/dashboard/EconomicCalendarWidget.vue';
 </script>
 
 <template>
     <div class="grid grid-cols-12 gap-8">
-        <StatsWidget />
+        <IaModelsWidget />
 
         <div class="col-span-12 xl:col-span-6">
-            <RecentSalesWidget />
-            <BestSellingWidget />
+            <SignalHistoryWidget />
+            <!--<PerformanceByModelWidget />-->
         </div>
         <div class="col-span-12 xl:col-span-6">
-            <RevenueStreamWidget />
-            <NotificationsWidget />
+            <EconomicCalendarWidget />
         </div>
     </div>
 </template>
